@@ -2,8 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { IonAccordionGroup } from '@ionic/angular';
 
 @Component({
-  selector: 'app-example',
-  templateUrl: 'example.component.html',
+  selector: 'map',
+  templateUrl: 'map.html',
 })
 export class ExampleComponent {
   @ViewChild('accordionGroup', { static: true }) accordionGroup: IonAccordionGroup;
