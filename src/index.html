@@ -4,7 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Ionic News App</title>
-
+  <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+  <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
@@ -21,17 +36,16 @@
   <link rel="apple-touch-icon" href="assets/img/appicon.png">
   <link rel="stylesheet" type="text/css" href="css/overrides.css">
   <link rel="manifest" href="manifest.json">
-</head>
+  </head>
 
-<body>
+   <body>
 
   <app-root></app-root>
 
-  <!-- Replace the API key with your own, see:
-    https://developers.google.com/maps/documentation/javascript/get-api-key -->
-  <!-- <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pf6ZdFQj5qw7rc_HSGrhUwQKfIe9ICw"></script> -->
-
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  
+  <!-- <script async="" defer="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6607653375286321"></script> -->
+  
+  
 </body>
 
 </html>
