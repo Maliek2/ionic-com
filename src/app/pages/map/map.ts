@@ -5,7 +5,7 @@ import { ActionSheetController } from '@ionic/angular';
 @Component({
   selector: 'map',
   templateUrl: 'map.html',
-  styleUrls: ['./map.css'],
+  styleUrls: ['./map.scss'],
 })
 export class ExampleComponent {
   result: string;
@@ -14,8 +14,8 @@ export class ExampleComponent {
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Example header',
-      subHeader: 'Example subheader',
+      header: 'Maliek News',
+      subHeader: 'Maliek News',
       buttons: [
         {
           text: 'Delete',
