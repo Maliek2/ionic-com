@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+
   <ion-accordion-group #accordionGroup>
   <ion-accordion value="first">
     <ion-item slot="header" color="light">
@@ -28,7 +28,7 @@
     <div class="ion-padding" slot="content">Third Content</div>
   </ion-accordion>
 </ion-accordion-group>
-
+<ion-content>
 <ion-button (click)="toggleAccordion()">Toggle Second Accordion</ion-button>
   <div class="container">
   <ion-button (click)="presentActionSheet()">Open</ion-button>
