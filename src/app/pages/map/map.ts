@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-example',
-  templateUrl: 'example.component.html',
-  styleUrls: ['./example.component.css'],
+  selector: 'map',
+  templateUrl: 'map.html',
+  styleUrls: ['./map.css'],
 })
 export class ExampleComponent {
   result: string;
